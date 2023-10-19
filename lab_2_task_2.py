@@ -1,5 +1,7 @@
-d = int(input('Первый член?'))
+b = int(input('Первый член?'))
 q = int(input('знаменатель?'))
 n = int(input('количество членов прогрессии?'))
-b = d*(q**(n-1))
-print(b)
+for i in range(n):
+f += 1
+c = b * q ** f
+print(c)
