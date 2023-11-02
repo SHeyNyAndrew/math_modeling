@@ -1,6 +1,5 @@
-gracity_constant = 6,67 * 10**(1/11)
 speed_of_ligth = 3 * 10**8
-g= 9.8
+gravitation= 9.8
 elementary_change =1,60176634*10**(1/19)
 Boltzmann_constant=1,380649*10**(1/23) 
 planc_mass=2,1743424*10**(1/8)
