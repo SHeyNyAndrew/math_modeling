@@ -1,3 +1,8 @@
 import numpy as np
-def function (a, b):
-    x=
+
+def y(a, b, N):
+    x=np.linspace(a, b, N)
+    y.new = x**2
+
+
+print(a)
