@@ -1,13 +1,14 @@
-def area(figure, data):
-    if figure == 'круг':
-        print(data[0])
-        res = 3.14*(data[0]**2)
-    if figure == 'квадрат':
+def area(figura, data):
+    if figura == 'круг':
+        print()
+        res = 3.14*(a**2)
+    if figura == 'квадрат':
         a,b = data
         res = a*b
-    if figure == 'треугольник':
+    if figura == 'треугольник':
         res = (a*b)/2
     return (res)
     
-figure = input('фигура ')
-print(area(figure))
+figura = input('фигура ')
+data = input(a, b)
+print(area(figura))
