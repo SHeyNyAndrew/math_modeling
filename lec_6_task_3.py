@@ -11,9 +11,8 @@ def circle_plotter(radius=10):
     fxy = X**2 + Y**2 - radius**2
 
     plt.contour(X, Y, fxy, levels=[0])
-    plt.axis('equal')
-
-    plt.savefig('fig_4.png')
+    
+    plt.savefig('fig_7.png')
 
 if __name__ == '__mane__':
     circle_plotter()
