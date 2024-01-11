@@ -11,7 +11,7 @@ def circle_move(R, angle_vel, time):
 def animate(i):
     ball.set_data(circle_move(R=2, angle_vel=1, time=i))
 
-if name=='main':
+if __name__=='main':
     fig, ax = plt.subplots()
     ball, = plt.plot([], [], 'o', color='r', label='Ball')
 
@@ -25,4 +25,4 @@ if name=='main':
                         frames=180,
                         interval=30)
 
-ani.save('animation_4.gif')
+any.save('animation_4.gif')
