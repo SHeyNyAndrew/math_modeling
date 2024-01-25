@@ -3,7 +3,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def circle_move(vx0, vy0, t):
+def circle_move(v, alpha, t):
+    vx0 = v * np.cos(alpha)
+    vy0 = v * np.sin(alpha)
     g=10
     x = vx0 * t
     y = vy0 *t - g * t**2 / 2
@@ -11,7 +13,7 @@ def circle_move(vx0, vy0, t):
 
 
 def animate(time):
-    ball.set_data(circle_move(vx0=80, vy0=60, t=time))
+    ball.set_data(circle_move(v=80, alpha=np.pi/6, t=time))
 
 
 if __name__ == '__main__':
