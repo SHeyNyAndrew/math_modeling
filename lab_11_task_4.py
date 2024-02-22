@@ -11,23 +11,22 @@ def move_func(z, t):
     
     
     dx_dt = vx
-    dvx_dt = -u*vx
+    dvx_dt = 0
     dy_dt = vy
-    dvy_dt =(-u*vy) -g
+    dvy_dt = g - k/m *y
     
     return dx_dt, dvx_dt, dy_dt, dvy_dt
 g = 9.8
-v = 15
-alpha = 60* np.pi / 180
+v = 5
+k = 500
+m = 0.8
+
+x0 = 0
+vx0 = 0 
+y0 = 10
+vy0 = 5
 
 	
-x0 = 0
-vx0 = v * np.cos(alpha)
-y0 = 0
-vy0 = v * np.sin(alpha)
-u = 0.2
-m = 0.5
-F = 0.1
  
 z0 = x0, vx0, y0, vy0
  
@@ -59,8 +58,9 @@ def animate(i):
  
 ani = FuncAnimation(fig, animate, frames=frames, interval=30)
  
-edge = 20
-ax.set_xlim(0, edge)
-ax.set_ylim(0, edge)
+edge = 15
+ax.set_xlim(-5, 5)
+ax.set_ylim(0, 10)
 
-ani.save('animation2.gif')
+ani.save('animation.gif')
+ 
