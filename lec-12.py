@@ -7,8 +7,8 @@ frames = 200
 t = np.linspace(0, 5, frames)
 
 def move_func(z, t):
-    x, vx, y,vy = z
-
+    x, vx, y, vy = z
+    
     
     dx_dt = vx
     dvx_dt = 0
@@ -45,8 +45,8 @@ def solve_func(i, key):
 	
 fig, ax = plt.subplots()
  
-ball, = plt.plot([], [], 'o', color='r')
-ball_line, = plt.plot([], [], '-', color='r')
+ball, = plt.plot([], [], 'o', color='g')
+ball_line, = plt.plot([], [], '-', color='g')
  
  
 def animate(i):
@@ -59,4 +59,6 @@ ani = FuncAnimation(fig, animate, frames=frames, interval=30)
 edge = 15
 ax.set_xlim(0, edge)
 ax.set_ylim(0, edge)
+
+ani.save('animation.gif')
  
