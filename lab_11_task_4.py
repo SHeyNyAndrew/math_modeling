@@ -17,14 +17,14 @@ def move_func(z, t):
     
     return dx_dt, dvx_dt, dy_dt, dvy_dt
 g = 9.8
-v = 5
+v = 1
 k = 500
 m = 0.8
 
 x0 = 0
 vx0 = 0 
 y0 = 10
-vy0 = 5
+vy0 = 0.1
 
 	
  
@@ -58,7 +58,7 @@ def animate(i):
  
 ani = FuncAnimation(fig, animate, frames=frames, interval=30)
  
-edge = 15
+edge = 6
 ax.set_xlim(-5, 5)
 ax.set_ylim(0, 10)
 
